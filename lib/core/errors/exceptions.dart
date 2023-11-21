@@ -1,8 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:tdd_tutorial/core/errors/failure.dart';
 
-class ServerException extends Equatable implements Failure {
-  const ServerException(this.message, this.statusCode);
+class ApiException extends Equatable implements Failure {
+  const ApiException(this.message, this.statusCode);
   @override
   final String message;
   @override
