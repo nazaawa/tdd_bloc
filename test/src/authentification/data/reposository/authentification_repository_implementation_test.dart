@@ -74,7 +74,7 @@ void main() {
   group("getUsers", () {
     const List<UserModel> tReponse = [UserModel.empty()];
     test(
-        "should call the  [RemoteDataSource.getUsers] and complete successfully whrn the calll tp the remote source is successful ",
+        "should call the  [RemoteDataSource.getUsers] and complete successfully when the call tp the remote source is successful ",
         () async {
       when(() => remoteDataSource.getUsers()).thenAnswer(
         (value) => Future.value(tReponse),
